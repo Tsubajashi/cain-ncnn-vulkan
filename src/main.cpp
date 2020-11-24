@@ -701,7 +701,7 @@ int main(int argc, char** argv)
 
     if (tilesize.empty())
     {
-        tilesize.resize(use_gpu_count, 512);
+        tilesize.resize(use_gpu_count, 2048);
     }
 
     int cpu_count = std::max(1, ncnn::get_cpu_count());
