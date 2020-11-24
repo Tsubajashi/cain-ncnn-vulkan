@@ -12,7 +12,7 @@
 CAIN::CAIN(int gpuid)
 {
     tilesize = 2048;
-    prepadding = 64;
+    prepadding = 32;
 
     vkdev = ncnn::get_gpu_device(gpuid);
     cain_preproc = 0;
@@ -34,7 +34,7 @@ int CAIN::load()
     opt.use_vulkan_compute = true;
     opt.use_fp16_packed = true;
     opt.use_fp16_storage = true;
-    opt.use_fp16_arithmetic = false;
+    opt.use_fp16_arithmetic = true;
     opt.use_int8_storage = true;
 
     cainnet.opt = opt;
