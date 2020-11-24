@@ -11,7 +11,7 @@
 
 CAIN::CAIN(int gpuid)
 {
-    tilesize = 512;
+    tilesize = 2048;
     prepadding = 64;
 
     vkdev = ncnn::get_gpu_device(gpuid);
