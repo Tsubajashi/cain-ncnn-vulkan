@@ -41,8 +41,8 @@ int CAIN::load()
 
     cainnet.set_vulkan_device(vkdev);
 
-    cainnet.load_param("cain\cain.param");
-    cainnet.load_model("cain\cain.bin");
+    cainnet.load_param("cain.param");
+    cainnet.load_model("cain.bin");
 
     // initialize preprocess and postprocess pipeline
     {
